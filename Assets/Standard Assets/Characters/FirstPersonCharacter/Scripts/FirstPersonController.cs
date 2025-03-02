@@ -43,6 +43,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        public GameObject bullet;
+        public Transform firePoint;
+
         // Use this for initialization
         private void Start()
         {
@@ -82,6 +85,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+
+            if(Input.GetMouseButtonDown(0)){
+                Instantiate(bullet, firePoint.position, firePoint.rotation);
+            }
         }
 
 
