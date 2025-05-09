@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-  speed: 0.6
+  speed: 3
   agent: {fileID: -8856164617145469409}
 --- !u!114 &2740820467827641202
 MonoBehaviour:
